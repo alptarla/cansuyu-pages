@@ -1,2 +1,27 @@
 <!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CanSuyu Gizlilik Politikası</title><style>body{font-family:-apple-system,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#1d2b1f}h1{color:#2e7d32}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:6px;vertical-align:top}a{color:#2e7d32}</style></head><body>
-<p><a href="support.html">Destek</a></p></body></html>
+<h1>CanSuyu Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+<p><b>Veri sorumlusu:</b> Alp Tarla, Türkiye, e‑posta: <a href="mailto:alp.tarla.development@gmail.com">alp.tarla.development@gmail.com</a>. 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") m.10 uyarınca sizi bilgilendiririz.</p>
+<h2>1. Hangi verileri işliyoruz?</h2>
+<table>
+<tr><th>Veri</th><th>Kaynak</th><th>Nerede saklanır</th></tr>
+<tr><td>Anonim kullanıcı kimliği (rastgele uid)</td><td>Uygulama ilk açılışta otomatik oluşturur (Firebase Authentication, anonim oturum)</td><td>Google Firebase</td></tr>
+<tr><td>Bitki bilgileri: ad, tür, oda, ışık, saksı, sulama aralığı, sulama/erteleme geçmişi, bakım günlüğü notları, uygulama ayarları (hatırlatma saati, tatil modu)</td><td>Sizin girişiniz</td><td>Cihazınızda ve Google Cloud Firestore'da, yalnızca size ait <code>users/{uid}</code> alanında</td></tr>
+<tr><td>Fotoğraflar</td><td>Kamera/fotoğraf arşivinden sizin seçiminiz</td><td><b>Yalnızca cihazınızda.</b> Sunucuya yüklenmez; bulutta yalnızca dosya adı tutulur</td></tr>
+<tr><td>Bildirimler</td><td>—</td><td>Hatırlatmalar cihaz içi (yerel) bildirimdir; push sunucusu, cihaz jetonu kullanılmaz</td></tr>
+</table>
+<p>Ad, e‑posta, telefon, konum, rehber, reklam kimliği (IDFA) <b>toplanmaz</b>. Uygulamada reklam, analitik, çökme raporlama veya takip (tracking) aracı <b>yoktur</b>. Hesap oluşturmanız gerekmez.</p>
+<h2>2. Amaç ve hukuki sebep</h2>
+<p>Veriler yalnızca uygulamanın çalışması, bitkilerinizin sulama takviminin hesaplanması ve verilerinizin cihaz değişikliği/yeniden kurulumda korunması için işlenir (KVKK m.5/2‑c: sözleşmenin kurulması/ifası; m.5/2‑f: meşru menfaat). Pazarlama veya profilleme yapılmaz; veriler satılmaz, paylaşılmaz.</p>
+<h2>3. Aktarım (yurt dışı dahil)</h2>
+<p>Bulut altyapısı Google LLC / Google Ireland Ltd. tarafından sağlanan Firebase (Authentication, Cloud Firestore, ücretsiz "Spark" planı) hizmetidir; veriler eur3 (Avrupa çok bölgeli: Belçika ve Hollanda) bölgesindeki sunucularda tutulur. Bu, KVKK m.9 kapsamında yurt dışına aktarım niteliğindedir; aktarım, Google'ın KVKK m.9 kapsamındaki standart sözleşme hükümleri ve hizmet koşulları çerçevesinde yapılır. Erişim, Firestore güvenlik kurallarıyla yalnızca ilgili anonim kullanıcıya sınırlıdır.</p>
+<h2>4. Saklama süresi</h2>
+<p>Veriler, uygulamadaki <b>Ayarlar → "Hesabı ve tüm verileri sil"</b> seçeneğini kullanana kadar saklanır. Bu işlem buluttaki tüm kayıtlarınızı, anonim hesabınızı ve cihazdaki veri/fotoğrafları kalıcı olarak siler. Uygulamayı yalnızca silmek buluttaki verileri silmez; anonim kimlik kaybolduğu için bu veriler bir daha size bağlanamaz — silinmesini <a href="mailto:alp.tarla.development@gmail.com">alp.tarla.development@gmail.com</a> üzerinden talep edebilirsiniz.</p>
+<h2>5. Haklarınız (KVKK m.11)</h2>
+<p>Verinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltme, silme, aktarıldığı üçüncü kişileri bilme, itiraz ve zararın giderilmesini talep etme haklarına sahipsiniz. Başvurular: <a href="mailto:alp.tarla.development@gmail.com">alp.tarla.development@gmail.com</a>. En geç 30 gün içinde ücretsiz yanıtlanır.</p>
+<h2>6. Çocuklar</h2>
+<p>Uygulama genel kitleye yöneliktir; bilerek çocuklardan kişisel veri toplamayız.</p>
+<h2>7. Değişiklikler</h2>
+<p>Bu metin güncellenirse yeni sürüm bu sayfada yayınlanır.</p>
+<hr>
+<h3>English summary</h3>
+<p>CanSuyu creates an anonymous Firebase account and stores your plant data (names, species, rooms, watering history, notes, settings) in Google Cloud Firestore so it survives reinstalls. Photos never leave your device. Reminders are local notifications. No ads, analytics, tracking or sign‑up. Delete everything anytime via Settings → "Delete account and all data". Contact: <a href="mailto:alp.tarla.development@gmail.com">alp.tarla.development@gmail.com</a>.</p><p><a href="support.html">Destek</a></p></body></html>
